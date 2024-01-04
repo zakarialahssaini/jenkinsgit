@@ -1,10 +1,4 @@
-@google @search
-
-@severity=blocker
-
-@issue=6
-
-@tmsLink=45678
+@search
 
 Feature: Test the login functionality
 
