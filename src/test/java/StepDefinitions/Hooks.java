@@ -1,5 +1,4 @@
 package StepDefinitions;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -14,10 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.ByteArrayInputStream;
 
-
 public class Hooks {
     private static WebDriver driver;
-
     @Before
     public void setUpDriver() {
         WebDriverManager.chromedriver().browserVersion("120.0.6099.63").setup();
@@ -51,8 +48,7 @@ public class Hooks {
             Allure.addAttachment("Scenario Screenshot", new ByteArrayInputStream(screenshot));
             System.out.println("I'm working man");
             scenario.attach(screenshot, "image/png", "Scenario Screenshot");
-            System.out.println("I'm working man1");
-          
+            System.out.println("I'm working man1");          
         } catch (Exception e) {
             e.printStackTrace();
         }
